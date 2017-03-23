@@ -3,13 +3,15 @@
 
 
     
+    
+    
   <url>
-    <loc>http://yoursite.com/2017/03/22/HelloPython/</loc>
-    <lastmod>2017-03-22T13:26:07.000Z</lastmod>
+    <loc>http://yoursite.com/2017/03/23/hello-world/</loc>
+    <lastmod>2017-03-23T13:14:04.000Z</lastmod>
     <data>
         <display>
-        <title>HelloPython</title>
-        <pubTime>2017-03-22T13:26:07.000Z</pubTime>
+        <title>Hello World</title>
+        <pubTime>2017-03-23T13:14:03.000Z</pubTime>
         
          
            
@@ -19,12 +21,12 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/03/22/hello-world/</loc>
-    <lastmod>2017-03-22T12:08:55.000Z</lastmod>
+    <loc>http://yoursite.com/2017/03/22/HelloPython/</loc>
+    <lastmod>2017-03-22T13:26:07.000Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2017-03-22T12:08:55.000Z</pubTime>
+        <title>HelloPython</title>
+        <pubTime>2017-03-22T13:26:07.000Z</pubTime>
         
          
            
