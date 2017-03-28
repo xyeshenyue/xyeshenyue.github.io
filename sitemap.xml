@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/03/28/Python%E5%B0%8F%E5%B8%B8%E8%AF%86%E2%80%94%E2%80%94list-%E8%B5%8B%E5%80%BC%E7%9A%84%E5%8C%BA%E5%88%AB-X-Y-%E5%92%8C-X-X-Y/</loc>
+    
+    <lastmod>2017-03-28T06:35:55.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/404/sample1.html</loc>
+    
+    <lastmod>2017-03-24T09:02:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/404/index.html</loc>
+    
+    <lastmod>2017-03-24T08:53:25.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2017-03-24T05:47:50.000Z</lastmod>
