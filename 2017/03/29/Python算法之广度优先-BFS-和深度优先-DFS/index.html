@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Python,算法,遍历," />
 
 
 
@@ -89,12 +89,25 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Life is short,use python.">
-<meta property="og:url" content="http://yoursite.com/archives/2017/03/index.html">
+<meta name="description" content="##广度优先搜索(BFS)每个顶点只访问它的邻接节点(假如这个邻接节点没有被访问)，并且将这个节点记录下来，当访问完它的邻接节点之后就结束这个顶点的访问广度优先用到了”先进先出”队列，通过这个队列来存储优先发现的节点，按照顺序来进行处理.
+处理过程如下图的二叉树
+##深度优先搜索(DFS)访问一个顶点以后，继续访问它的一个子节点，直到该子节点没有子节点，再接着访问当前节点的邻接节点，返回父节点，继">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python算法之广度优先(BFS)和深度优先(DFS)">
+<meta property="og:url" content="http://yoursite.com/2017/03/29/Python算法之广度优先-BFS-和深度优先-DFS/index.html">
 <meta property="og:site_name" content="Life is short,use python.">
+<meta property="og:description" content="##广度优先搜索(BFS)每个顶点只访问它的邻接节点(假如这个邻接节点没有被访问)，并且将这个节点记录下来，当访问完它的邻接节点之后就结束这个顶点的访问广度优先用到了”先进先出”队列，通过这个队列来存储优先发现的节点，按照顺序来进行处理.
+处理过程如下图的二叉树
+##深度优先搜索(DFS)访问一个顶点以后，继续访问它的一个子节点，直到该子节点没有子节点，再接着访问当前节点的邻接节点，返回父节点，继">
+<meta property="og:image" content="http://yoursite.com/../img/python_DFS/BFS.png">
+<meta property="og:image" content="http://yoursite.com/../img/python_DFS/DFS.png">
+<meta property="og:updated_time" content="2017-03-29T13:49:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Life is short,use python.">
+<meta name="twitter:title" content="Python算法之广度优先(BFS)和深度优先(DFS)">
+<meta name="twitter:description" content="##广度优先搜索(BFS)每个顶点只访问它的邻接节点(假如这个邻接节点没有被访问)，并且将这个节点记录下来，当访问完它的邻接节点之后就结束这个顶点的访问广度优先用到了”先进先出”队列，通过这个队列来存储优先发现的节点，按照顺序来进行处理.
+处理过程如下图的二叉树
+##深度优先搜索(DFS)访问一个顶点以后，继续访问它的一个子节点，直到该子节点没有子节点，再接着访问当前节点的邻接节点，返回父节点，继">
+<meta name="twitter:image" content="http://yoursite.com/../img/python_DFS/BFS.png">
 
 
 
@@ -122,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/03/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/29/Python算法之广度优先-BFS-和深度优先-DFS/"/>
 
 
 
 
 
-  <title> 归档 | Life is short,use python. </title>
+  <title> Python算法之广度优先(BFS)和深度优先(DFS) | Life is short,use python. </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -153,7 +166,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -285,214 +298,191 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 5 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/29/Python算法之广度优先-BFS-和深度优先-DFS/" itemprop="url">
-              
-                <span itemprop="name">Python算法之广度优先(BFS)和深度优先(DFS)</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-29T21:16:50+08:00"
-              content="2017-03-29" >
-          03-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/28/Python算法之各类排序算法/" itemprop="url">
-              
-                <span itemprop="name">Python算法之各类排序算法</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-28T17:21:48+08:00"
-              content="2017-03-28" >
-          03-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/28/Python小常识——list-赋值的区别-X-Y-和-X-X-Y/" itemprop="url">
-              
-                <span itemprop="name">Python小常识——list 赋值的区别(X+=Y)和(X=X+Y)</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-28T14:12:48+08:00"
-              content="2017-03-28" >
-          03-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/23/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-23T21:14:03+08:00"
-              content="2017-03-23" >
-          03-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/22/HelloPython/" itemprop="url">
-              
-                <span itemprop="name">HelloPython</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-22T21:26:07+08:00"
-              content="2017-03-22" >
-          03-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/29/Python算法之广度优先-BFS-和深度优先-DFS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xyeshenyue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Life is short,use python.">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Python算法之广度优先(BFS)和深度优先(DFS)
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-29T21:16:50+08:00">
+                2017-03-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/29/Python算法之广度优先-BFS-和深度优先-DFS/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://yoursite.com/2017/03/29/Python算法之广度优先-BFS-和深度优先-DFS/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/03/29/Python算法之广度优先-BFS-和深度优先-DFS/" class="leancloud_visitors" data-flag-title="Python算法之广度优先(BFS)和深度优先(DFS)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>##广度优先搜索(BFS)<br>每个顶点只访问它的邻接节点(假如这个邻接节点没有被访问)，并且将这个节点记录下来，当访问完它的邻接节点之后就结束这个顶点的访问<br>广度优先用到了”先进先出”队列，通过这个队列来存储优先发现的节点，按照顺序来进行处理.</p>
+<p>处理过程如下图的二叉树<br><img src="../img/python_DFS/BFS.png" alt="img"></p>
+<p>##深度优先搜索(DFS)<br>访问一个顶点以后，继续访问它的一个子节点，直到该子节点没有子节点，再接着访问当前节点的邻接节点，返回父节点，继续访问，如此往复，直到当前顶点被访问或者不存在邻接的顶点</p>
+<p>吹过程如下图的二叉树<br><img src="../img/python_DFS/DFS.png" alt="img"></p>
+<p>代码实现过程</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line">import os</div><div class="line"></div><div class="line">def BFS_Dir(path, dirCallback, fileCallback):</div><div class="line">    queue = []</div><div class="line">    ret = []</div><div class="line">    queue.append(path)</div><div class="line">    while len(queue) &gt; 0:</div><div class="line">        tmp = queue.pop(0)</div><div class="line">        if os.path.isdir(tmp):</div><div class="line">            ret.append(tmp)</div><div class="line">            for item in os.path.listdir(tmp):</div><div class="line">                queue.append(os.path.join(tmp, item))</div><div class="line">            if dirCallback:</div><div class="line">                dirCallback(tmp)</div><div class="line">        elif os.path.isfile(tmp):</div><div class="line">            ret.append(tmp)</div><div class="line">            if fileCallback:</div><div class="line">                fileCallback(tmp)</div><div class="line">    return ret</div><div class="line">   </div><div class="line">def DFS_Dir(path, dirCallback, fileCallback):</div><div class="line">    stack = []</div><div class="line">    ret = []</div><div class="line">    stack.append(path)</div><div class="line">    while len(stack) &gt; 0:</div><div class="line">        tmp = stack.pop(len(stack) - 1)</div><div class="line">        if os.path.isdir(tmp):</div><div class="line">            ret.append(tmp)</div><div class="line">            for item in os.path.isdir(tmp):</div><div class="line">                stack.append(os.path.join(tmp, item))</div><div class="line">            if dirCallback:</div><div class="line">                dirCallback(tmp)</div><div class="line">        elif os.path.isfile(tmp):</div><div class="line">            ret.append(tmp)</div><div class="line">            if fileCallback:</div><div class="line">                fileCallback(tmp)</div><div class="line">    return ret</div><div class="line"></div><div class="line">def printDir(path):</div><div class="line">    print(&quot;Dir: &quot;,path)</div><div class="line">    </div><div class="line">def printFile(path):</div><div class="line">    print(&quot;File: &quot;,path)</div><div class="line">    </div><div class="line">bfs = BFS_Dir(&quot;/Users/YOLO/Desktop/Hexo&quot;, printDir, printFile)</div><div class="line">dfs = DFS_Dir(&quot;/Users/YOLO/Desktop/Hexo&quot;, printDir, printFile)</div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+            <a href="/tags/算法/" rel="tag"># 算法</a>
+          
+            <a href="/tags/遍历/" rel="tag"># 遍历</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/28/Python算法之各类排序算法/" rel="next" title="Python算法之各类排序算法">
+                <i class="fa fa-chevron-left"></i> Python算法之各类排序算法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -500,6 +490,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -705,11 +706,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
@@ -727,9 +726,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'xyeshenyue';
-      var disqus_identifier = 'archives/2017/03/index.html';
+      var disqus_identifier = '2017/03/29/Python算法之广度优先-BFS-和深度优先-DFS/';
 
-      var disqus_title = "";
+      var disqus_title = "Python算法之广度优先(BFS)和深度优先(DFS)";
 
 
       function run_disqus_script(disqus_script) {
@@ -742,6 +741,13 @@
 
       run_disqus_script('count.js');
 
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
       
 
     </script>
@@ -905,26 +911,6 @@
 
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
